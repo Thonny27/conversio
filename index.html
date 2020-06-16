@@ -35,6 +35,7 @@
 
     <!-- modernizr css -->
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="js/smooth-scroll.polyfills.min.js"></script>
 </head>
 
 <body>
@@ -56,9 +57,9 @@
                             <a class="navbar-brand page-scroll black-logo" href="index.html">
                                 <img src="img/logo/logoConversio.png" alt="">
                             </a>
-                            <a class="navbar-brand page-scroll white-logo" href="index.html">
-                                <img src="img/logo/logoConversio.png" alt="">
-                            </a>
+<!--                            <a class="navbar-brand page-scroll white-logo" href="index.html">-->
+<!--                                <img src="img/logo/logoConversio.png" alt="">-->
+<!--                            </a>-->
                         </div>
                         <!-- logo end -->
                     </div>
@@ -70,24 +71,9 @@
                                     <ul class="nav navbar-nav navbar-right">
                                         <li><a class="pagess" href="index.html">Inicio</a>
                                         </li>
-                                        <li><a href="about.html">Quienes somos?</a></li>
-                                        <li><a href="services.html">Nuestros Servicios</a></li>
-<!--                                        <li><a class="pagess" href="#">Pages</a>-->
-<!--                                            <ul class="sub-menu">-->
-<!--                                                <li><a href="team.html">team</a></li>-->
-<!--                                                <li><a href="faq.html">FAQ</a></li>-->
-<!--                                                <li><a href="review.html">Review</a></li>-->
-<!--                                                <li><a href="pricing.html">Pricing</a></li>-->
-<!--                                            </ul>-->
-<!--                                        </li>-->
-<!--                                        <li><a class="pagess" href="#">Blog</a>-->
-<!--                                            <ul class="sub-menu">-->
-<!--                                                <li><a href="blog.html">Blog grid</a></li>-->
-<!--                                                <li><a href="blog-sidebar.html">Blog Sidebar</a></li>-->
-<!--                                                <li><a href="blog-details.html">Blog Details</a></li>-->
-<!--                                            </ul>-->
-<!--                                        </li>-->
-                                        <li><a href="contact.html">Contacto</a></li>
+                                        <li><a href="about.html">Nosotros</a></li>
+                                        <li><a data-scroll-header href="#servicios">Nuestros Servicios</a></li>
+                                        <li><a data-scroll-header href="#contact">Contacto</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -105,30 +91,15 @@
                     <div class="col-md-12">
                         <div class="mobile-menu">
                             <div class="logo">
-                                <a href="index.html"><img src="img/logo/logo2.png" alt="" /></a>
+                                <a href="index.html"><img src="img/logo/logoConversio.png" alt="" /></a>
                             </div>
                             <nav id="dropdown">
                                 <ul>
                                     <li><a class="pagess" href="index.html">Inicio</a>
                                     </li>
                                     <li><a href="about.html">Quienes somos?</a></li>
-                                    <li><a href="services.html">Nuestros Servicios</a></li>
-<!--                                    <li><a class="pagess" href="#">Pages</a>-->
-<!--                                        <ul class="sub-menu">-->
-<!--                                            <li><a href="team.html">team</a></li>-->
-<!--                                            <li><a href="faq.html">FAQ</a></li>-->
-<!--                                            <li><a href="review.html">Review</a></li>-->
-<!--                                            <li><a href="pricing.html">Pricing</a></li>-->
-<!--                                        </ul>-->
-<!--                                    </li>-->
-<!--                                    <li><a class="pagess" href="#">Blog</a>-->
-<!--                                        <ul class="sub-menu">-->
-<!--                                            <li><a href="blog.html">Blog grid</a></li>-->
-<!--                                            <li><a href="blog-sidebar.html">Blog Sidebar</a></li>-->
-<!--                                            <li><a href="blog-details.html">Blog Details</a></li>-->
-<!--                                        </ul>-->
-<!--                                    </li>-->
-                                    <li><a href="contact.html">Contacto</a></li>
+                                    <li><a data-scroll-header href="#servicioDesarrollo">Nuestros Servicios</a></li>
+                                    <li><a data-scroll-header href="#contact">Contacto</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -136,7 +107,6 @@
                 </div>
             </div>
         </div>
-        <!-- mobile-menu-area end -->
     </header>
     <!-- header end -->
     <!-- Start Slider Area -->
@@ -151,19 +121,16 @@
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <!-- layer 1 -->
                             <div class="layer-1 wow fadeInUp" data-wow-delay="0.3s">
-                                <h2 class="title2">Tenemos más de 10 años liderando</h2>
+                                <h4 class="title2">+10 años liderando y construyendo los proyectos más importantes de
+                                    comercio electrónico en el Perú
+                                </h4>
                             </div>
-                            <!-- layer 2 -->
-                            <div class="layer-2 wow fadeInUp" data-wow-delay="0.5s">
-                                <p>construyendo los proyectos más importantes de comercio electrónico en el Perú.</p>
-                            </div>
-                            <!-- layer 3 -->
                         </div>
                         <div class="col-md-6 col-sm-6 hidden-xs">
                             <div class="slide-images-inner wow fadeInUp" data-wow-delay="0.5s">
-                                <div class="slide-top-image item-bounce">
-                                    <img src="img/slider/sp1.png" alt="">
-                                </div>
+<!--                                <div class="slide-top-image item-bounce">-->
+<!--                                    <img src="img/slider/sp1.png" alt="">-->
+<!--                                </div>-->
                                 <div class="slide-images">
                                     <img src="img/feature/homePrimera.png" alt="">
                                 </div>
@@ -174,379 +141,291 @@
             </div>
         </div>
     </div>
-    <!-- End Slider Area -->
-    <!-- Welcome service area start -->
-<!--    <div class="welcome-area area-padding">-->
-<!--        <div class="container">-->
-<!--            <div class="row">-->
-<!--                <div class="all-services">-->
-<!--                    &lt;!&ndash; single-well end&ndash;&gt;-->
-<!--                    <div class="col-md-4 col-sm-6 col-xs-12">-->
-<!--                        <div class="well-services wow fadeInUp" data-wow-delay="0.3s">-->
-<!--                            <div class="services-img">-->
-<!--                                <img src="img/services/w1.png" alt="">-->
-<!--                            </div>-->
-<!--                            <div class="main-wel">-->
-<!--                                <div class="wel-content">-->
-<!--                                    <h4>Natural Language Processing</h4>-->
-<!--                                    <p>Aspernatur sit adipisci quaerat unde at neque Redug Lagre dolor sit amet consectetu. independent agency, free from the internal demands.</p>-->
-<!--                                    <a class="wel-btn" href="#"><i class="icon icon-arrow-right"></i></a>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    &lt;!&ndash; single-well end&ndash;&gt;-->
-<!--                    <div class="col-md-4 col-sm-6 col-xs-12">-->
-<!--                        <div class="well-services wow fadeInUp" data-wow-delay="0.5s">-->
-<!--                            <div class="services-img">-->
-<!--                                <img src="img/services/w2.png" alt="">-->
-<!--                            </div>-->
-<!--                            <div class="main-wel">-->
-<!--                                <div class="wel-content">-->
-<!--                                    <h4>Computer Vision & Pattern Recognition</h4>-->
-<!--                                    <p>Aspernatur sit adipisci quaerat unde at neque Redug Lagre dolor sit amet consectetu. independent agency, free from the internal demands.</p>-->
-<!--                                    <a class="wel-btn" href="#"><i class="icon icon-arrow-right"></i></a>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    &lt;!&ndash; single-well end&ndash;&gt;-->
-<!--                    <div class="col-md-4 col-sm-6 col-xs-12">-->
-<!--                        <div class="well-services wow fadeInUp" data-wow-delay="0.7s">-->
-<!--                            <div class="services-img">-->
-<!--                                <img src="img/services/w3.png" alt="">-->
-<!--                            </div>-->
-<!--                            <div class="main-wel">-->
-<!--                                <div class="wel-content">-->
-<!--                                    <h4>Sequential Data Analytics</h4>-->
-<!--                                    <p>Aspernatur sit adipisci quaerat unde at neque Redug Lagre dolor sit amet consectetu. independent agency, free from the internal demands.</p>-->
-<!--                                    <a class="wel-btn" href="#"><i class="icon icon-arrow-right"></i></a>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    &lt;!&ndash; single-well end&ndash;&gt;-->
-<!--                    <div class="hidden-md hidden-lg col-sm-6 col-xs-12">-->
-<!--                        <div class="well-services wow fadeInUp" data-wow-delay="0.9s">-->
-<!--                            <div class="services-img">-->
-<!--                                <img src="img/services/w4.png" alt="">-->
-<!--                            </div>-->
-<!--                            <div class="main-wel">-->
-<!--                                <div class="wel-content">-->
-<!--                                    <h4>User Behavior Prediction</h4>-->
-<!--                                    <p>Aspernatur sit adipisci quaerat unde at neque Redug Lagre dolor sit amet consectetu. independent agency, free from the internal demands.</p>-->
-<!--                                    <a class="wel-btn" href="#"><i class="icon icon-arrow-right"></i></a>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    &lt;!&ndash; single-well end&ndash;&gt;-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-    <!-- Welcome service area End -->
-    <!-- Start Brand Area -->
-    <div class="about-area  fix area-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                    <div class="about-content">
-                        <div class="about-images wow fadeInLeft" data-wow-delay="0.7s">
-                            <div class="rotmate-image rotateme">
-                                <img src="img/feature/circle.png" alt="">
-                            </div>
-                            <img src="img/feature/entrenamiento1.png" alt="">
-                            <div class="video-content">
-<!--                                <a href="https://www.youtube.com/watch?v=O33uuBh6nXA" class="video-play vid-zone">-->
-<!--                                    <i class="fa fa-play"></i>-->
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                    <div class="support-all">
-                        <!-- Start services -->
-                        <div class="support-services wow fadeInUp" data-wow-delay="0.3s">
-                            <a class="support-images" href="#">01</a>
-                            <div class="support-content">
-                                <h4><a>Servicio Profesional</a></h4>
-                                <p>Nos tomamos el trabajo de entender a tu cliente para ofrecerte la solución que haga más sentido.</p>
-                            </div>
-                        </div>
-                        <!-- Start services -->
-                        <div class="support-services wow fadeInUp" data-wow-delay="0.5s">
-                            <a class="support-images" href="#">02</a>
-                            <div class="support-content">
-                                <h4><a>Control de Marca</a></h4>
-                                <p>Exponemos tu marca de acuerdo a tus objetivos</p>
-                            </div>
-                        </div>
-                        <!-- Start services -->
-                        <div class="support-services hidden-sm wow fadeInUp" data-wow-delay="0.7s">
-                            <a class="support-images" href="#">03</a>
-                            <div class="support-content">
-                                <h4><a>Servicio a Todos los Rubros</a></h4>
-                                <p>Nos enfocamos en lo más preciado: tus clientes</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Start services -->
-                </div>
+    <a id="servicios" name="servicios"></a>
+    <br>
+    <br>
+    <br>
 
-            </div>
-        </div>
+    <div class="section-headline text-center">
+        <h3>Nuestros Servicios</h3><br><br>
     </div>
-    <!-- End Banner Area -->
-    <!-- Start About Area -->
-<!--    <div class="feature-area area-padding">-->
-<!--        <div class="container">-->
-<!--            <div class="row">-->
-<!--                <div class="col-md-6 col-sm-6 col-xs-12">-->
-<!--                    <div class="feature-image item-bounce wow fadeInLeft" data-wow-delay="0.3s">-->
-<!--                        <img src="img/feature/ft.png" alt="">-->
-<!--                    </div>-->
-<!--                    <div class="triangle-1">-->
-<!--                        <img src="img/about/t1.png" alt="">-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="col-md-6 col-sm-6 col-xs-12">-->
-<!--                    <div class="feature-inner wow fadeInRight" data-wow-delay="0.3s">-->
-<!--                        <div class="feature-text">-->
-<!--                            <h3>Power Aesthetic Surgery Commendation System</h3>-->
-<!--                            <p>Replacing a maintains the amount of lines. When replacing a selection. help agencies to define their new business objectives and then create the road map.</p>-->
-<!--                            <ul>-->
-<!--                                <li><a href="#"><i class="flaticon-007-ai"></i><span>A community with a unique mission</span></a></li>-->
-<!--                                <li><a href="#"><i class="flaticon-048-cloud"></i><span>AI-powered text generator is the scariest thing</span></a></li>-->
-<!--                                <li><a href="#"><i class="flaticon-076-lock"></i><span>AI will automate cybersecurity improve</span></a></li>-->
-<!--                                <li><a href="#"><i class="flaticon-104-robotic-hand"></i><span>Scientists invent robotic biker shorts</span></a></li>-->
-<!--                            </ul>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            &lt;!&ndash; end Row &ndash;&gt;-->
-<!--        </div>-->
-<!--    </div>-->
-    <!-- End About Area -->
-    <!-- Start About Area -->
-    <div class="feature-area-2 area-padding">
+
+    <a name="servicioDesarrollo"></a>
+    <div class="feature-area area-padding">
         <div class="container">
             <div class="row">
-                <div class="hidden-md hidden-lg hidden-sm col-xs-12">
+                <div class="col-md-5 col-sm-5 col-xs-12">
                     <div class="feature-image item-bounce wow fadeInRight" data-wow-delay="0.3s">
-                        <img src="img/feature/ft1.png" alt="">
+                        <img src="img/feature/desarrollo.png" alt="">
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="col-md-7 col-sm-7 col-xs-12">
                     <div class="feature-inner wow fadeInLeft" data-wow-delay="0.3s">
                         <div class="feature-text">
-                            <h3>Auto-tracking of Quay Crane for Lighter</h3>
-                            <p>Replacing a maintains the amount of lines. When replacing a selection. help agencies to define their new business objectives and then create the road map.</p>
+                            <h3>Desarrollo Web y Soluciones TI</h3>
+                            <p>Trabajamos en entender a tus clientes para ofrecer la solución más eficiente</p>
                             <ul>
-                                <li><a href="#"><i class="flaticon-007-ai"></i><span>A community with a unique mission</span></a></li>
-                                <li><a href="#"><i class="flaticon-048-cloud"></i><span>AI-powered text generator is the scariest thing</span></a></li>
-                                <li><a href="#"><i class="flaticon-076-lock"></i><span>AI will automate cybersecurity improve</span></a></li>
-                                <li><a href="#"><i class="flaticon-104-robotic-hand"></i><span>Scientists invent robotic biker shorts</span></a></li>
+                                <li><a><i class="fa fa-check"></i><span>Diseño de sitios web increíbles</span></a></li>
+                                <li><a><i class="fa fa-check"></i><span>Desarrollo de tiendas virtuales y todo tipo de plataformas transaccionales </span></a></li>
+                                <li><a><i class="fa fa-check"></i><span>OMS (implementación y soporte)</span></a></li>
+                                <li><a><i class="fa fa-check"></i><span>Mantenimiento y monitoreo (continuidad operativa)</span></a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-6 hidden-xs">
-                    <div class="feature-image item-bounce wow fadeInRight" data-wow-delay="0.3s">
-                        <img src="img/feature/ft1.png" alt="">
-                    </div>
-                    <div class="triangle-2">
-                        <img src="img/about/t2.png" alt="">
-                    </div>
-                </div>
             </div>
             <!-- end Row -->
         </div>
     </div>
-    <!-- End About Area -->
-    <!-- Start Challange Area -->
-    <div class="tab-area fix area-padding">
+    <a name="servicioMarketPlace"></a>
+    <div class="feature-area-2 area-padding">
         <div class="container">
             <div class="row">
-                <!-- End single page -->
-                <div class="col-md-5 col-sm-6 col-xs-12">
-                    <div class="tab-menu">
-                        <!-- Nav tabs -->
-                        <ul class="nav nav-tabs" role="tablist">
-                            <li class="active">
-                                <a href="#p-view-1" role="tab" data-toggle="tab">
-                                    <span class="cha-icon"><i class="fa fa-code"></i></span>
-                                    <span class="title-date">
-								        	<span class="cha-title">Soluciones TI</span>
-<!--                                    <span class="cha-date">All kind of industry</span>-->
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#p-view-2" role="tab" data-toggle="tab">
-                                    <span class="cha-icon"><i class="fa fa-cart-arrow-down"></i></span>
-                                    <span class="title-date">
-								        	<span class="cha-title">Marketplaces</span>
-<!--                                    <span class="cha-date">All kind of transport</span>-->
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#p-view-3" role="tab" data-toggle="tab">
-                                    <span class="cha-icon"><i class="fa fa-bar-chart-o"></i></span>
-                                    <span class="title-date">
-								        	<span class="cha-title">Logistica</span>
-<!--                                    <span class="cha-date">human health research</span>-->
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#p-view-4" role="tab" data-toggle="tab">
-                                    <span class="cha-icon"><i class="flaticon-091-ai"></i></span>
-                                    <span class="title-date">
-								        	<span class="cha-title">Marketing Digital</span>
-<!--                                    <span class="cha-date">Media and music</span>-->
-                                    </span>
-                                </a>
-                            </li>
-                        </ul>
+                <div class="hidden-md hidden-lg hidden-sm col-xs-12">
+                    <div class="feature-image item-bounce wow fadeInLeft" data-wow-delay="0.3s">
+                        <img src="img/feature/ft1.png" alt="">
                     </div>
                 </div>
-                <div class="col-md-7 col-sm-6 col-xs-12">
-                    <div class="tab-content">
-                        <div class="tab-pane active" id="p-view-1">
-                            <div class="tab-inner">
-                                <div class="single-machine">
-<!--                                    <div class="machine-text">-->
-<!--                                        <h3>Artificial intelligence in industry</h3>-->
-<!--                                        <p>Nos tomamos el trabajo de entender a tu cliente para ofrecerte la solución que haga más sentido</p>-->
-<!--                                    </div>-->
-                                    <div class="tabe-img">
-                                        <img src="img/feature/desarrollo.png" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane" id="p-view-2">
-                            <div class="tab-inner">
-                                <div class="single-machine">
-<!--                                    <div class="machine-text">-->
-<!--                                        <h3>The self driving car</h3>-->
-<!--                                        <p>Dummy text is also used to demonstrate the appearance of different typefaces and layouts, and in general the content of dummy text is nonsensical. used to demonstrate the appearance of different typefaces and layouts,-->
-<!--                                            and in general the content of dummy text is nonsensical</p>-->
-<!--                                    </div>-->
-                                    <div class="tabe-img">
-                                        <img src="img/feature/marketplace.png" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane" id="p-view-3">
-                            <div class="tab-inner">
-                                <div class="single-machine">
-<!--                                    <div class="machine-text">-->
-<!--                                        <h3>Machine learning in healthcare</h3>-->
-<!--                                        <p>Dummy text is also used to demonstrate the appearance of different typefaces and layouts, and in general the content of dummy text is nonsensical. used to demonstrate the appearance of different typefaces and layouts,-->
-<!--                                            and in general the content of dummy text is nonsensical</p>-->
-<!--                                    </div>-->
-                                    <div class="tabe-img">
-                                        <img src="img/feature/logistica1.png" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane" id="p-view-4">
-                            <div class="tab-inner">
-                                <div class="single-machine">
-<!--                                    <div class="machine-text">-->
-<!--                                        <h3>Robotics involved in entertainment</h3>-->
-<!--                                        <p>Dummy text is also used to demonstrate the appearance of different typefaces and layouts, and in general the content of dummy text is nonsensical. used to demonstrate the appearance of different typefaces and layouts,-->
-<!--                                            and in general the content of dummy text is nonsensical</p>-->
-<!--                                    </div>-->
-                                    <div class="tabe-img">
-                                        <img src="img/feature/produccionDecontenido1.png" alt="">
-                                    </div>
-                                </div>
-                            </div>
+                <div class="col-md-7 col-sm-7 col-xs-12">
+                    <div class="feature-inner wow fadeInRight" data-wow-delay="0.3s">
+                        <div class="feature-text">
+                            <h3>Marketplaces</h3>
+                            <p>Te acercamos a donde están tus clientes</p>
+                            <ul>
+                                <li><a href="#"><i class="fa fa-check"></i><span>Auditoría y selección de socios comerciales</span></a></li>
+                                <li><a href="#"><i class="fa fa-check"></i><span>Negociación conjunta de comisiones y publicidad dentro de cada plataforma</span></a></li>
+                                <li><a href="#"><i class="fa fa-check"></i><span>Creación de modelo logísitco</span></a></li>
+                                <li><a href="#"><i class="fa fa-check"></i><span>Definición de procesos operativos</span></a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <!-- end column -->
+                <div class="col-md-5 col-sm-5 hidden-xs">
+                    <div class="feature-image item-bounce wow fadeInLeft" data-wow-delay="0.3s">
+                        <img src="img/feature/homePrimera.png" alt="">
+                    </div>
+                </div>
             </div>
             <!-- end Row -->
         </div>
     </div>
-    <!-- End Tab end -->
-    <!-- Start Subscribe area -->
-<!--    <div class="counter-area fix">-->
-<!--        <div class="container-full">-->
-<!--            &lt;!&ndash; Start counter Area &ndash;&gt;-->
-<!--            <div class="row">-->
-<!--                <div class="fun-content">-->
-<!--                    <div class="col-md-3 col-sm-3 col-xs-12">-->
-<!--                        &lt;!&ndash; fun_text  &ndash;&gt;-->
-<!--                        <div class="fun_text wow fadeInLeft" data-wow-delay="0.2s">-->
-<!--                            <span class="counter">980</span>-->
-<!--                            <h4>Projects complete</h4>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class="col-md-3 col-sm-3 col-xs-12">-->
-<!--                        &lt;!&ndash; fun_text  &ndash;&gt;-->
-<!--                        <div class="fun_text wow fadeInLeft" data-wow-delay="0.3s">-->
-<!--                            <span class="counter">50</span>-->
-<!--                            <h4>Work projects</h4>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class="col-md-3 col-sm-3 col-xs-12">-->
-<!--                        &lt;!&ndash; fun_text  &ndash;&gt;-->
-<!--                        <div class="fun_text wow fadeInLeft" data-wow-delay="0.4s">-->
-<!--                            <span class="counter">110</span>-->
-<!--                            <h4>Award won</h4>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class="col-md-3 col-sm-3 col-xs-12">-->
-<!--                        &lt;!&ndash; fun_text  &ndash;&gt;-->
-<!--                        <div class="fun_text last-content wow fadeInLeft" data-wow-delay="0.5s">-->
-<!--                            <span class="counter">550</span>-->
-<!--                            <h4>Happy Clients</h4>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-    <!-- End Subscribe area -->
-    <!-- Start Brand Area -->
-<!--    <div class="brand-area area-padding">-->
-<!--        <div class="container">-->
-<!--            <div class="row">-->
-<!--                <div class="col-md-12 col-sm-12 col-xs-12">-->
-<!--                    <div class="brand-all">-->
-<!--                        <div class="brand-items">-->
-<!--                            <div class="single-brand-item">-->
-<!--                                <a href="#"><img src="img/brand/1.png" alt=""></a>-->
-<!--                            </div>-->
-<!--                            <div class="single-brand-item">-->
-<!--                                <a href="#"><img src="img/brand/2.png" alt=""></a>-->
-<!--                            </div>-->
-<!--                            <div class="single-brand-item">-->
-<!--                                <a href="#"><img src="img/brand/3.png" alt=""></a>-->
-<!--                            </div>-->
-<!--                            <div class="single-brand-item">-->
-<!--                                <a href="#"><img src="img/brand/4.png" alt=""></a>-->
-<!--                            </div>-->
-<!--                            <div class="single-brand-item">-->
-<!--                                <a href="#"><img src="img/brand/5.png" alt=""></a>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-    <!-- End Banner Area -->
+    <a name="servicioMarketingDigital"></a>
+    <div class="feature-area area-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-sm-5 col-xs-12">
+                    <div class="feature-image item-bounce wow fadeInRight" data-wow-delay="0.3s">
+                        <img src="img/feature/produccionDecontenido1.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-7 col-sm-7 col-xs-12">
+                    <div class="feature-inner wow fadeInLeft" data-wow-delay="0.3s">
+                        <div class="feature-text">
+                            <h3>Marketing digital</h3>
+                            <p>Exponemos tu marca de acuerdo a tus objetivos</p>
+                            <p>Procesos de campañas para ecommerce</p>
+                            <p>Preparación para eventos cyber</p>
+                            <ul>
+                                <li><a><i class="fa fa-check"></i><span>Procesos de campañas para e-commerce</span></a></li>
+                                <li><a><i class="fa fa-check"></i><span>SEO/SEM</span></a></li>
+                                <li><a><i class="fa fa-check"></i><span>CRM</span></a></li>
+                                <li><a><i class="fa fa-check"></i><span>E-mail marketing</span></a></li>
+                                <li><a><i class="fa fa-check"></i><span>Manejo de redes sociales</span></a></li>
+                                <li><a><i class="fa fa-check"></i><span>Campañas de publicidad de performance</span></a></li>
+                                <li><a><i class="fa fa-check"></i><span>Preparación para eventos “Cyber”</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end Row -->
+        </div>
+    </div>
+    <a name="servicioLogistica"></a>
+    <div class="feature-area-2 area-padding">
+        <div class="container">
+            <div class="row">
+                <div class="hidden-md hidden-lg hidden-sm col-xs-12">
+                    <div class="feature-image item-bounce wow fadeInLeft" data-wow-delay="0.3s">
+                        <img src="img/feature/ft1.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-7 col-sm-7 col-xs-12">
+                    <div class="feature-inner wow fadeInRight" data-wow-delay="0.3s">
+                        <div class="feature-text">
+                            <h3>Logística</h3>
+                            <p>Atendemos tus requerimientos operativos</p>
+                            <ul>
+                                <li><a href="#"><i class="fa fa-check"></i><span>Soluciones de almacenamiento</span></a></li>
+                                <li><a href="#"><i class="fa fa-check"></i><span>Fulfillment</span></a></li>
+                                <li><a href="#"><i class="fa fa-check"></i><span>Retiro en tienda</span></a></li>
+                                <li><a href="#"><i class="fa fa-check"></i><span>Última milla</span></a></li>
+                                <li><a href="#"><i class="fa fa-check"></i><span>Logística inversa</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-sm-5 hidden-xs">
+                    <div class="feature-image item-bounce wow fadeInLeft" data-wow-delay="0.3s">
+                        <img src="img/feature/scooter.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- end Row -->
+        </div>
+    </div>
+    <a name="servicioCliente"></a>
+    <div class="feature-area area-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-sm-5 col-xs-12">
+                    <div class="feature-image item-bounce wow fadeInRight" data-wow-delay="0.3s">
+                        <img src="img/feature/servicioCliente2.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-7 col-sm-7 col-xs-12">
+                    <div class="feature-inner wow fadeInLeft" data-wow-delay="0.3s">
+                        <div class="feature-text">
+                            <h3>Servicio al cliente / Post venta</h3>
+                            <p>Nos enfocamos en lo más preciado: tus clientes</p>
+                            <ul>
+                                <li><a><i class="fa fa-check"></i><span>Setup de canal de atención</span></a></li>
+                                <li><a><i class="fa fa-check"></i><span>Creación de canal post venta</span></a></li>
+                                <li><a><i class="fa fa-check"></i><span>Gestión e implementación de canal de reclamos</span></a></li>
+                                <li><a><i class="fa fa-check"></i><span>Gestión de procesos de devolución</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end Row -->
+        </div>
+    </div>
+    <a name="servicionAudiovisual"></a>
+    <div class="feature-area-2 area-padding">
+        <div class="container">
+            <div class="row">
+                <div class="hidden-md hidden-lg hidden-sm col-xs-12">
+                    <div class="feature-image item-bounce wow fadeInLeft" data-wow-delay="0.3s">
+                        <img src="img/feature/ft1.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-7 col-sm-7 col-xs-12">
+                    <div class="feature-inner wow fadeInRight" data-wow-delay="0.3s">
+                        <div class="feature-text">
+                            <h3>Producción audiovisual y de contenidos</h3>
+                            <p>Entendemos tu esencia para tangibilizar tu marca</p>
+                            <ul>
+                                <li><a href="#"><i class="fa fa-check"></i><span>Fotografía y video de productos</span></a></li>
+                                <li><a href="#"><i class="fa fa-check"></i><span>Diseño gráfico</span></a></li>
+                                <li><a href="#"><i class="fa fa-check"></i><span>Branding</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 col-sm-5 hidden-xs">
+                    <div class="feature-image item-bounce wow fadeInLeft" data-wow-delay="0.3s">
+                        <img src="img/feature/produccionDecontenido2.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- end Row -->
+        </div>
+    </div>
+    <a name="servicioConsultoria"></a>
+    <div class="feature-area area-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-sm-5 col-xs-12">
+                    <div class="feature-image item-bounce wow fadeInRight" data-wow-delay="0.3s">
+                        <img src="img/feature/entrenamiento1.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-7 col-sm-7 col-xs-12">
+                    <div class="feature-inner wow fadeInLeft" data-wow-delay="0.3s">
+                        <div class="feature-text">
+                            <h3>Consultoría y entrenamiento</h3>
+                            <p>Te acompañamos en todo el proceso</p>
+                            <ul>
+                                <li><a><i class="fa fa-check"></i><span>Set up de proyectos integrales</span></a></li>
+                                <li><a><i class="fa fa-check"></i><span>Asesoría financiera (P&L aplicado)</span></a></li>
+                                <li><a><i class="fa fa-check"></i><span>Workshops y Capacitaciones </span></a></li>
+                                <li><a><i class="fa fa-check"></i><span>Design Thinking</span></a></li>
+                                <li><a><i class="fa fa-check"></i><span>Gestión de la omnicanalidad</span></a></li>
+                                <li><a><i class="fa fa-check"></i><span>RRHH</span></a></li>
+                                <li><a><i class="fa fa-check"></i><span>Asesoramiento legal</span></a></li>
+                                <li><a><i class="fa fa-check"></i><span>Gestión de protección de datos</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end Row -->
+        </div>
+    </div>
+
+    <a name ="contact"></a>
+    <div class="contact-page area-padding">
+        <div class="container">
+            <!-- End row -->
+            <div class="row mar-row">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="contact-head">
+                        <h4>Contáctanos</h4>
+                        <p>Nos gustaría conocer más sobre tu proyecto.</p>
+                        <p>Escríbenos y descubre cómo podemos ayudarte.</p>
+                        <div class="project-share">
+                            <h5>Redes Sociales :</h5>
+                            <ul class="project-social">
+                                <li>
+                                    <a href="https://www.facebook.com/ConversioPeru/" target="_blank">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/company/conversioperu" target="_blank">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- End contact icon -->
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="contact-form">
+                        <div class="row">
+                            <form id="contactForm" method="POST" action="contact.php" class="contact-form">
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input type="text" id="name" class="form-control" placeholder="Nombre" required data-error="Por favor ingrese su nombre">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input type="email" class="email form-control" id="email" placeholder="Email" required data-error="Por favor ingrese un email">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <input type="text" id="msg_subject" class="form-control" placeholder="Título" required data-error="Por favor ingrese un titulo">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <textarea id="message" rows="7" placeholder="Escriba su mensaje aqui" class="form-control" required data-error="Por favor ingrese contenido del mensaje"></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                                    <button type="submit" id="submit" class="contact-btn">Enviar</button>
+                                    <div id="msgSubmit" class="h3 text-center hidden"></div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- End contact Form -->
+            </div>
+        </div>
+    </div>
 
     <!-- Start Footer bottom Area -->
     <footer class="footer1">
@@ -556,13 +435,14 @@
                     <div class="col-md-5 col-sm-5 col-xs-12">
                         <div class="footer-content logo-footer">
                             <div class="footer-head">
+                                <br>
+                                <br>
+                                <br>
+                                <br>
                                 <div class="footer-logo">
-                                    <a class="footer-black-logo" href="#"><img src="img/logo/logoConversio.png" style="width: 230px;" alt=""></a>
+                                    <a class="footer-black-logo" href="#"><img src="img/logo/logoConversio.png" style="width: 300px;" alt=""></a>
                                     <a class="footer-white-logo" href="#"><img src="img/logo/logoConversio.png" alt=""></a>
                                 </div>
-                                <p>
-                                    Are you looking for professional advice for your new business.Are you looking for professional advice for your new business.Are you looking for professional advice for your new business.
-                                </p>
                             </div>
                         </div>
                     </div>
@@ -572,15 +452,15 @@
                             <div class="footer-head">
                                 <h4>Servicios</h4>
                                 <ul class="footer-list">
-                                    <li><a href="services.html"> Desarrollo Web y Soluciones TI</a></li>
-                                    <li><a href="services.html">Marketplaces</a></li>
-                                    <li><a href="services.html">Marketing digital</a></li>
-                                    <li><a href="services.html">Logística</a></li>
+                                    <li><a data-scroll-header href="#servicioDesarrollo"> Desarrollo Web y Soluciones TI</a></li>
+                                    <li><a data-scroll-header href="#servicioMarketPlace">Marketplaces</a></li>
+                                    <li><a data-scroll-header href="#servicioMarketingDigital">Marketing digital</a></li>
+                                    <li><a data-scroll-header href="#servicioLogistica">Logística</a></li>
                                 </ul>
                                 <ul class="footer-list hidden-sm">
-                                    <li><a href="services.html">Servicio al cliente</a></li>
-                                    <li><a href="services.html">Producción audiovisual</a></li>
-                                    <li><a href="services.html"> Consultoría y entrenamiento</a></li>
+                                    <li><a data-scroll-header href="#servicioCliente">Servicio al cliente</a></li>
+                                    <li><a data-scroll-header href="#servicionAudiovisual">Producción audiovisual</a></li>
+                                    <li><a data-scroll-header href="#servicioConsultoria"> Consultoría y entrenamiento</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -591,35 +471,20 @@
                             <div class="footer-head">
                                 <h4>Información</h4>
                                 <div class="footer-contacts">
-                                    <p><span>Tel :</span> +0890-564-5644</p>
-                                    <p><span>Email :</span> info@roboart3.com</p>
-                                    <p><span>Dirección :</span> Calle Los Nogales 319</p>
+                                    <p><span>&nbsp;Tel :</span> &nbsp; 952 392 605</p>
+                                    <p><span>Email :</span> &nbsp; contacto@conversio.pe</p>
+                                    <p><span>Dirección :</span> &nbsp; Los Nogales 319, San Isidro</p>
                                 </div>
                                 <div class="footer-icons">
                                     <ul>
                                         <li>
-                                            <a href="#">
+                                            <a href="https://www.facebook.com/ConversioPeru/" target="_blank">
                                                 <i class="fa fa-facebook"></i>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#">
-                                                <i class="fa fa-twitter"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="fa fa-google"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="fa fa-pinterest"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <i class="fa fa-instagram"></i>
+                                            <a href="https://www.linkedin.com/company/conversioperu" target="_blank">
+                                                <i class="fa fa-linkedin"></i>
                                             </a>
                                         </li>
                                     </ul>
@@ -637,7 +502,7 @@
                         <div class="copyright">
                             <p>
                                 Copyright © 2020
-                                <a href="#">Conversio</a> Todos los derechos reservados
+                                <a href="index.html">Conversio</a> Todos los derechos reservados
                             </p>
                         </div>
                     </div>
@@ -672,6 +537,7 @@
     <script src="js/plugins.js"></script>
     <!-- main js -->
     <script src="js/main.js"></script>
+
 </body>
 
 </html>
