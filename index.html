@@ -58,7 +58,7 @@
                                 <img src="img/logo/logoConversio.png" alt="">
                             </a>
 <!--                            <a class="navbar-brand page-scroll white-logo" href="index.html">-->
-<!--                                <img src="img/logo/logoConversio.png" alt="">-->
+<!--                                <img src="img/logo/logo7.png" alt="">-->
 <!--                            </a>-->
                         </div>
                         <!-- logo end -->
@@ -112,7 +112,7 @@
     <!-- Start Slider Area -->
     <div class="intro-area intro-home">
         <div class="bg-wrapper">
-            <img src="img/background/bg.jpg" alt="">
+            <img src="img/background/bg1.png" alt="">
         </div>
         <div class="intro-content">
             <div class="slider-content">
@@ -131,8 +131,9 @@
 <!--                                <div class="slide-top-image item-bounce">-->
 <!--                                    <img src="img/slider/sp1.png" alt="">-->
 <!--                                </div>-->
-                                <div class="slide-images">
-                                    <img src="img/feature/homePrimera.png" alt="">
+                                <div class="slide-images" >
+<!--                                    <img src="img/feature/homePrimera.png" alt="">-->
+                                   <img name="slider" alt="" >
                                 </div>
                             </div>
                         </div>
@@ -183,7 +184,7 @@
             <div class="row">
                 <div class="hidden-md hidden-lg hidden-sm col-xs-12">
                     <div class="feature-image item-bounce wow fadeInLeft" data-wow-delay="0.3s">
-                        <img src="img/feature/ft1.png" alt="">
+                        <img src="img/feature/homePrimera.png" alt="">
                     </div>
                 </div>
                 <div class="col-md-7 col-sm-7 col-xs-12">
@@ -247,7 +248,7 @@
             <div class="row">
                 <div class="hidden-md hidden-lg hidden-sm col-xs-12">
                     <div class="feature-image item-bounce wow fadeInLeft" data-wow-delay="0.3s">
-                        <img src="img/feature/ft1.png" alt="">
+                        <img src="img/feature/scooter.png" alt="">
                     </div>
                 </div>
                 <div class="col-md-7 col-sm-7 col-xs-12">
@@ -307,7 +308,7 @@
             <div class="row">
                 <div class="hidden-md hidden-lg hidden-sm col-xs-12">
                     <div class="feature-image item-bounce wow fadeInLeft" data-wow-delay="0.3s">
-                        <img src="img/feature/ft1.png" alt="">
+                        <img src="img/feature/produccionDecontenido2.png" alt="">
                     </div>
                 </div>
                 <div class="col-md-7 col-sm-7 col-xs-12">
@@ -537,6 +538,32 @@
     <script src="js/plugins.js"></script>
     <!-- main js -->
     <script src="js/main.js"></script>
+    <script>
+        window.addEventListener('load',function(){
+
+            var imagenes=[]
+            imagenes[0] = "img/feature/internet.png"
+            imagenes[1] = "img/feature/audience.png"
+            imagenes[2] = "img/feature/display.png"
+            imagenes[3] = "img/feature/logistica.png"
+
+            var indice = 0;
+
+            function cambiarImagenes(){
+                document.slider.src=imagenes[indice]
+
+                if (indice <3){
+                    indice++;
+                }else{
+                    indice =0;
+                }
+            }
+
+            setInterval(cambiarImagenes,2000)
+
+
+        })
+    </script>
 
 </body>
 

@@ -869,7 +869,7 @@ div#preloader {
     line-height: 40px;
     color: #fff;
     float: left;
-    background: #003371;
+    background: #07E1BE;
     width: 40px;
     height: 40px;
     border-radius: 3px;
@@ -2002,7 +2002,7 @@ span.new {
     position: relative;
 }
 .page-area {
-    /*background: url(img/background/bread-bg.jpg);*/
+    background: url(img/logo/logoConversio5.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -2021,7 +2021,7 @@ span.new {
 .breadcrumb {
     background-color: transparent;
     margin-bottom: 0;
-    padding: 230px 0px 200px;
+    padding: 150px 0px 60px;
 }
 .breadcrumb h3 {
     color: #fff;
